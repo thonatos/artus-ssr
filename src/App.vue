@@ -1,13 +1,13 @@
 <script setup lang="ts">
 import { ref, useSSRContext } from 'vue';
 
-const ctx = import.meta.env.SSR ? useSSRContext() : {}
+const ctx = import.meta.env.SSR ? useSSRContext() : {};
 const count = ref(0);
 const msg = ref(ctx?.data?.msg);
 </script>
 
 <template>
-  <img class="logo" src="/vite.svg" alt="" />
+  <img class="logo" src="./assets/vite.svg" alt="" />
   <img class="logo vue" src="./assets/vue.svg" alt="" />
 
   <h1>{{ msg }}</h1>

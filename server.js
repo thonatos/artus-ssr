@@ -1,9 +1,10 @@
 import fs from 'node:fs/promises';
-import c2k from 'koa-connect';
-import serve from 'koa-static';
-import compression from 'koa-compress';
+
 import Koa from 'koa';
 import Router from '@koa/router';
+import serve from 'koa-static';
+import c2k from 'koa-connect';
+import compression from 'koa-compress';
 
 import { createServer } from 'vite';
 

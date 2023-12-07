@@ -1,0 +1,8 @@
+compatibility_date = "2022-10-10"
+name = "vite-ssr-vue"
+main = "./worker/index.ts"
+tsconfig = "./tsconfig.worker.json"
+
+[site]
+bucket = "./dist/client"
+
