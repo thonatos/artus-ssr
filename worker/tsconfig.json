@@ -8,5 +8,5 @@
     "moduleResolution": "node",
     "types": ["@cloudflare/workers-types"]
   },
-  "include": ["worker/index.ts"]
+  "include": ["index.ts", "worker-configuration.d.ts"]
 }

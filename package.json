@@ -9,10 +9,10 @@
     "build": "npm run build:client && npm run build:server",
     "build:client": "vite build --ssrManifest --outDir dist/client",
     "build:server": "vite build --ssr src/entry-server.ts --outDir dist/server",
-    "prettier": "prettier --write .",
     "worker:dev": "wrangler dev",
+		"worker:deploy": "wrangler deploy --outdir=dist/worker",
     "worker:preview": "wrangler deploy --dry-run --outdir=dist/worker",
-    "worker:deploy": "wrangler deploy --outdir=dist/worker"
+		"prettier": "prettier --write ."
   },
   "dependencies": {
     "@koa/router": "^12.0.1",
