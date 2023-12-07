@@ -1,0 +1,31 @@
+{
+  "name": "vite-ssr-vue",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "node server",
+    "start": "cross-env NODE_ENV=production node server",
+    "build": "npm run build:client && npm run build:server",
+    "build:client": "vite build --ssrManifest --outDir dist/client",
+    "build:server": "vite build --ssr src/entry-server.ts --outDir dist/server",
+    "prettier": "prettier --write ."
+  },
+  "dependencies": {
+    "@koa/router": "^12.0.1",
+    "koa": "^2.14.2",
+    "koa-compress": "^5.1.1",
+    "koa-connect": "^2.1.0",
+    "koa-static": "^5.0.0",
+    "vue": "^3.3.8"
+  },
+  "devDependencies": {    
+    "@types/node": "^20.9.0",
+    "@vitejs/plugin-vue": "^4.5.0",
+    "cross-env": "^7.0.3",
+    "prettier": "^3.1.0",
+    "typescript": "^5.2.2",
+    "vite": "^5.0.0",
+    "vue-tsc": "^1.8.22"
+  }
+}
